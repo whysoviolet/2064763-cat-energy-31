@@ -6,6 +6,10 @@
   <title>Кэт энерджи. Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -36,6 +40,11 @@
     <section class="main-container__hero hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+        <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Кэт энерджи с курицей крупным планом">
+      </picture>
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
     <section class="main-container__programs programs">
@@ -77,8 +86,16 @@
       </dl>
       <p class="example__price">Затраты на питание: <span class="example__price-value">15 000 руб.</span></p>
       <div class="example__wrapper slider">
-        <img class="slider__image" src="#" width="280" height="256" alt="Изображение кота до программы">
-        <img class="slider__image" src="#" width="280" height="256" alt="Изображение кота после программы">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+          <img class="slider__image" src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" width="280" height="256" alt="Изображение кота до программы">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+          <img class="slider__image" src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" width="280" height="256" alt="Изображение кота после программы">
+        </picture>
         <button class="slider__button" type="button">
           <span class="visually-hidden">Кнопка управления слайдером</span>
         </button>
@@ -88,6 +105,11 @@
       <div class="address__wrapper">
         <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="address__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение на карте офиса Кэт энерджи">
+        </picture>
       </div>
       <div class="address_map">
         <img src="#" width="768" height="400" alt="Адрес офиса Кэт энерджи на карте">
